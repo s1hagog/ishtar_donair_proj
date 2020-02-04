@@ -1,9 +1,57 @@
-.wrapper {
+:root{
+    box-sizing: border-box;
+    
+}
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+ul{
+    list-style: none;
+}
+
+
+.header{
+    height: 32%;
+    position: relative;
+}
+.header .header-content{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 5px solid rgb(224, 47, 16);
-    padding: 2em;
-    width: 80%;
+}
+.header-content h1 {
+    text-align: center;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.header-content .image-wrapper img{
+    width: 30%;
+}
+.wrapper {
+    margin: 40em auto;
+    border: 5px solid #E63C25;
+    height: 297mm;
+    width: 210mm;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.main {
+
+}
+.main-left, .main-right{
+    float: left;
+    width: 50%;
 }
