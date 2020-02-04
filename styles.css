@@ -26,6 +26,9 @@ ul{
 }
 .header-content h1 {
     text-align: center;
+    /* font-family: 'Molle', cursive;
+    font-family: 'Courgette', cursive; */
+    font-family: 'Berkshire Swash', cursive;
 }
 
 .image-wrapper {
@@ -49,9 +52,14 @@ ul{
 }
 
 .main {
-
+    height: 64%;
 }
 .main-left, .main-right{
+    padding: 0 2em;
     float: left;
     width: 50%;
+    height: 100%;
+}
+.main-left {
+    border-right: 2px solid black;
 }
